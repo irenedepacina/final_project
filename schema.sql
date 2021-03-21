@@ -57,7 +57,7 @@ CREATE TABLE "state_emissions" (
 );
 
 -- Creating a Natural Disasters by State table
-CREATE TABLE "clean_weather" (
+CREATE TABLE "state_disasters" (
     "state_name" VARCHAR(40) NOT NULL,
     "state_abb" VARCHAR(40) NOT NULL,
     "year" INT NOT NULL,
