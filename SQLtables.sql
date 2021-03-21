@@ -2,7 +2,7 @@
 CREATE TABLE "state_temp" (
     "state_name" VARCHAR(40) NOT NULL,
     "state_abb" VARCHAR(40) NOT NULL,
-    "year" INT(4) NOT NULL,
+    "year" INT NOT NULL,
     "tempf" FLOAT NOT NULL,
     "tempc" FLOAT NOT NULL,
     CONSTRAINT "pk_state_temp" PRIMARY KEY ("state_name","year")
@@ -10,7 +10,7 @@ CREATE TABLE "state_temp" (
 
 -- Creating US National Temperature table
 CREATE TABLE "nation_temp" (
-    "year" INT(4) NOT NULL,
+    "year" INT NOT NULL,
     "tempf" FLOAT NOT NULL,
     "tempc" FLOAT NOT NULL,
     CONSTRAINT "pk_nation_temp" PRIMARY KEY ("year")
@@ -33,7 +33,7 @@ CREATE TABLE "state_season" (
 CREATE TABLE "state_population" (
     "state_name" VARCHAR(40) NOT NULL,
     "state_abb" VARCHAR(40) NOT NULL,
-    "year" INT(4) NOT NULL,
+    "year" INT NOT NULL,
     "population_thousands" FLOAT NOT NULL,
     CONSTRAINT "pk_state_population" PRIMARY KEY ("state_name","year")
 );
@@ -42,7 +42,7 @@ CREATE TABLE "state_population" (
 CREATE TABLE "state_rgdp" (
     "state_name" VARCHAR NOT NULL,
     "state_abb" VARCHAR NOT NULL,
-    "year" INT(4) NOT NULL,
+    "year" INT NOT NULL,
     "rgdp_millions" FLOAT NOT NULL,
     CONSTRAINT "pk_state_rgdp" PRIMARY KEY ("state_name","year")
 );
@@ -51,7 +51,7 @@ CREATE TABLE "state_rgdp" (
 CREATE TABLE "state_emissions" (
     "state_name" VARCHAR(40) NOT NULL,
     "state_abb" VARCHAR(40) NOT NULL,
-    "year" INT(4) NOT NULL,
+    "year" INT NOT NULL,
     "co2_emissions" FLOAT NOT NULL,
     CONSTRAINT "pk_state_emissions" PRIMARY KEY ("state_name","year")
 );
@@ -60,7 +60,7 @@ CREATE TABLE "state_emissions" (
 CREATE TABLE "clean_weather" (
     "state_name" VARCHAR(40) NOT NULL,
     "state_abb" VARCHAR(40) NOT NULL,
-    "year" INT(4) NOT NULL,
+    "year" INT NOT NULL,
     "drought" BIT NOT NULL,
     "flooding" BIT NOT NULL,
     "freeze" BIT NOT NULL,
