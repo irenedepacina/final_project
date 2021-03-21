@@ -67,12 +67,3 @@ Unsupervised ML, PCA, KMeans and Neural Network Linear Regression
 
 ## Database to be used
 SQL
-
-
-
-
-
-
-
-
-
