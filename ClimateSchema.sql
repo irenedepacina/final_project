@@ -5,7 +5,7 @@
 CREATE TABLE "state_temp" (
     "state_name" varchar   NOT NULL,
     "state_abb" varchar   NOT NULL,
-    "year" int  NOT NULL,
+    "year" int   NOT NULL,
     "tempf" float   NOT NULL,
     "tempc" float   NOT NULL,
     CONSTRAINT "pk_state_temp" PRIMARY KEY (
@@ -14,7 +14,7 @@ CREATE TABLE "state_temp" (
 );
 
 CREATE TABLE "nation_temp" (
-    "year" int  NOT NULL,
+    "year" int   NOT NULL,
     "tempf" float   NOT NULL,
     "tempc" float   NOT NULL,
     CONSTRAINT "pk_nation_temp" PRIMARY KEY (
@@ -66,7 +66,7 @@ CREATE TABLE "state_emissions" (
      )
 );
 
-CREATE TABLE "clean_weather" (
+CREATE TABLE "state_disasters" (
     "state_name" varchar   NOT NULL,
     "state_abb" varchar   NOT NULL,
     "year" int   NOT NULL,
@@ -77,7 +77,7 @@ CREATE TABLE "clean_weather" (
     "tropical_cyclone" bit   NOT NULL,
     "wildfire" bit   NOT NULL,
     "winter_storm" bit   NOT NULL,
-    CONSTRAINT "pk_clean_weather" PRIMARY KEY (
+    CONSTRAINT "pk_state_disasters" PRIMARY KEY (
         "state_name","year"
      )
 );
@@ -85,24 +85,15 @@ CREATE TABLE "clean_weather" (
 ALTER TABLE "state_temp" ADD CONSTRAINT "fk_state_temp_state_name_year" FOREIGN KEY("state_name", "year")
 REFERENCES "state_rgdp" ("state_name", "year");
 
-ALTER TABLE "nation_temp" ADD CONSTRAINT "fk_nation_temp_year" FOREIGN KEY("year")
-REFERENCES "state_temp" ("year");
-
-ALTER TABLE "state_season" ADD CONSTRAINT "fk_state_season_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_temp" ("state_name");
-
 ALTER TABLE "state_population" ADD CONSTRAINT "fk_state_population_state_name_year" FOREIGN KEY("state_name", "year")
 REFERENCES "state_temp" ("state_name", "year");
 
-ALTER TABLE "state_rgdp" ADD CONSTRAINT "fk_state_rgdp_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_season" ("state_name");
-
-ALTER TABLE "state_rgdp" ADD CONSTRAINT "fk_state_rgdp_year" FOREIGN KEY("year")
-REFERENCES "state_population" ("year");
+ALTER TABLE "state_rgdp" ADD CONSTRAINT "fk_state_rgdp_state_name_year" FOREIGN KEY("state_name", "year")
+REFERENCES "state_population" ("state_name", "year");
 
 ALTER TABLE "state_emissions" ADD CONSTRAINT "fk_state_emissions_state_name_year" FOREIGN KEY("state_name", "year")
 REFERENCES "state_temp" ("state_name", "year");
 
-ALTER TABLE "clean_weather" ADD CONSTRAINT "fk_clean_weather_state_name_year" FOREIGN KEY("state_name", "year")
+ALTER TABLE "state_disasters" ADD CONSTRAINT "fk_state_disasters_state_name_year" FOREIGN KEY("state_name", "year")
 REFERENCES "state_temp" ("state_name", "year");
 

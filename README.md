@@ -28,7 +28,7 @@ Climate change is an interesting topic with lot of available data.
 -	State by state environmental impact
 -	Are states experiencing climate change equally?
 -	Does Political leaning influence states climate change status?
-- Human impact of the US on climate change?
+-  Human impact on the US on climate change?
 - Are some states exacerbating climate change through consumption patterns?
 
 ### DataSources:
@@ -62,15 +62,13 @@ Weather Incidents/State/Year
 https://www.ncdc.noaa.gov/billions/mapping 
 
 ## ML Model to be used
-Unsupervised ML, PCA, KMeans and Linear Regression
+Unsupervised ML, PCA, KMeans and Neural Network Linear Regression
 
 
 ## Database to be used
 SQL
 
 
-To do by Saturday EOD:
--	Narrow down question – increase “wow” factor
 
 
 
