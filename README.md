@@ -2,26 +2,26 @@
 
 
 ## Team 
-Irene 
-Sebastian
-Vinutha
-Stephanie
+- Irene 
+- Sebastian
+- Vinutha
+- Stephanie
 
 ## Communication Methods
-Primary: Slack Channel- GroupProject
-Secondary: text/call
-Datasets: Google Drive
+1. Primary: Slack Channel- GroupProject
+2. Secondary: text/call
+3. Datasets: Google Drive
 https://drive.google.com/drive/folders/1Zz8U47NFCVOTpPoTCnhM6cKdX1Dzs-MN?usp=sharing
 
 
 ## Selected Topic
 Climate change by State
 
-## Rationale:
-Dataset availability
-US is one of the largest emitters of CO2 in developed countries.
-Population density and land mass lends itself to analysis
-Climate change is an interesting topic with lot of available data.
+## Rationale
+- Dataset availability
+- US is one of the largest emitters of CO2 in developed countries.
+- Population density and land mass lends itself to analysis
+- Climate change is an interesting topic with lot of available data.
 
 ## Discovery Questions
 -	Climate Change (Temperature) trends over time by state
@@ -32,34 +32,42 @@ Climate change is an interesting topic with lot of available data.
 - Are some states exacerbating climate change through consumption patterns?
 
 ### DataSources:
-Temperature/State/Year
-https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=climdiv_state_year.csv
+- Processed as: df1
+Raw file name: climdiv_state_year.csv
+Exported file name: state_temp.csv
+Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=climdiv_state_year.csv
 
-Population Data/State/Year
-https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/national/totals/
-https://www2.census.gov/programs-surveys/popest/datasets/2000-2010/intercensal/county/
+- Processed as: df2
+Raw file name: climdiv_national_year.csv
+Exported file name: nation_temp.csv
+Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=climdiv_national_year.csv
 
+- Processed as: df3
+Raw file name: model_state.csv
+Exported file name: state_season.csv
+Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=model_state.csv
 
-Emissions Data/State/Year
-https://www.eia.gov/environment/emissions/state/
+- Processed as: df4
+Raw file name: use_pop_gdp_1.csv
+Exported file name: state_population.csv
+Source: https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#StatisticsIndicators
+(Key statistics and indicators > other > population and GDP)
 
+- Processed as: df5
+Raw file name: use_pop_gdp_2.csv
+Exported file name: state_rgdp.csv
+Source: https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#StatisticsIndicators
+(Key statistics and indicators > other > population and GDP)
 
-Political Leadership/State/Year
-http://www.electiondataarchive.org/party-nationalization-measures.php
-Will have to map the constituency, party national level data … data is present from 1788 to 2016 for US - fyi it seems like it has other countries of the world
+- Processed as: df6
+Raw file name: t2_co2_emissions.csv
+Exported file name: state_emissions.csv
+Source: https://www.eia.gov/environment/emissions/state/
 
-Primary Industry/State/Year
-https://www.eia.gov/environment/emissions/state/ -- same link by sector xl sheet doesnt have year wise breakup
-Per capita energy-related carbon dioxide emissions by state (1990–2018) - looks good with state and year
-
-
-GDP/State/Year
-https://apps.bea.gov/regional/downloadzip.cfm 
---also has industry data
-
-
-Weather Incidents/State/Year
-https://www.ncdc.noaa.gov/billions/mapping 
+- Processed as: df7
+Raw file name: clean_weather.csv
+Exported file name: state_disasters.csv
+Source: https://www.ncdc.noaa.gov/billions/mapping
 
 ## ML Model to be used
 Unsupervised ML, PCA, KMeans and Neural Network Linear Regression
