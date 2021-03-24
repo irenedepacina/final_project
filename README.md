@@ -4,18 +4,18 @@
 ## Team 
 - Irene 
 - Sebastian
-- Vinutha
 - Stephanie
+- Vinutha
 
 ## Communication Methods
-1. Primary: Slack Channel- GroupProject
+1. Primary: Slack Workspace - GroupProject - multiple channels for different topics
 2. Secondary: text/call
-3. Datasets: Google Drive
+3. Datasets: Google Drive/Github
 https://drive.google.com/drive/folders/1Zz8U47NFCVOTpPoTCnhM6cKdX1Dzs-MN?usp=sharing
 
 
 ## Selected Topic
-Climate change by State
+Climate change by State in the USA
 
 ## Rationale
 - Dataset availability
