@@ -92,7 +92,7 @@ CREATE TABLE "state_energy" (
     "pe_naturalgas" bigint   NOT NULL,
     "pe_petroleum" bigint   NOT NULL,
     "pe_nuclear" bigint   NOT NULL,
-    "pe_totalrenew" bitint   NOT NULL,
+    "pe_totalrenew" bigint   NOT NULL,
     "re_biomass" bigint   NOT NULL,
     "re_geothermal" bigint   NOT NULL,
     "re_hydropower" bigint   NOT NULL,

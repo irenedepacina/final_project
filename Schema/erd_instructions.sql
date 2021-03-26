@@ -65,7 +65,7 @@ pe_coal bigint
 pe_naturalgas bigint
 pe_petroleum bigint
 pe_nuclear bigint
-pe_totalrenew bitint
+pe_totalrenew bigint
 re_biomass bigint
 re_geothermal bigint
 re_hydropower bigint
