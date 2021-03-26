@@ -5,7 +5,7 @@
 CREATE TABLE "state_us_master" (
     "state_name" varchar   NOT NULL,
     "state_abb" varchar   NOT NULL,
-    CONSTRAINT "pk_state_us_master" PRIMARY KEY (
+    PRIMARY KEY (
         "state_name"
      )
 );
@@ -15,7 +15,7 @@ CREATE TABLE "state_temp" (
     "year" int   NOT NULL,
     "tempf" float   NOT NULL,
     "tempc" float   NOT NULL,
-    CONSTRAINT "pk_state_temp" PRIMARY KEY (
+    PRIMARY KEY (
         "state_name","year"
      )
 );
@@ -25,7 +25,7 @@ CREATE TABLE "nation_temp" (
     "year" int   NOT NULL,
     "tempf" float   NOT NULL,
     "tempc" float   NOT NULL,
-    CONSTRAINT "pk_nation_temp" PRIMARY KEY (
+    PRIMARY KEY (
         "year"
      )
 );
@@ -38,7 +38,7 @@ CREATE TABLE "state_season" (
     "summer" float   NOT NULL,
     "winter" float   NOT NULL,
     "max_warming_season" varchar   NOT NULL,
-    CONSTRAINT "pk_state_season" PRIMARY KEY (
+    PRIMARY KEY (
         "state_name"
      )
 );
@@ -47,7 +47,7 @@ CREATE TABLE "state_population" (
     "state_name" varchar   NOT NULL,
     "year" int   NOT NULL,
     "population_thousands" int   NOT NULL,
-    CONSTRAINT "pk_state_population" PRIMARY KEY (
+    PRIMARY KEY (
         "state_name","year"
      )
 );
@@ -56,7 +56,7 @@ CREATE TABLE "state_rgdp" (
     "state_name" varchar   NOT NULL,
     "year" int   NOT NULL,
     "rgdp_millions" int   NOT NULL,
-    CONSTRAINT "pk_state_rgdp" PRIMARY KEY (
+    PRIMARY KEY (
         "state_name","year"
      )
 );
@@ -65,7 +65,7 @@ CREATE TABLE "state_emissions" (
     "state_name" varchar   NOT NULL,
     "year" int   NOT NULL,
     "co2_emissions" float   NOT NULL,
-    CONSTRAINT "pk_state_emissions" PRIMARY KEY (
+    PRIMARY KEY (
         "state_name","year"
      )
 );
@@ -80,7 +80,7 @@ CREATE TABLE "state_disasters" (
     "tropical_cyclone" int   NOT NULL,
     "wildfire" int   NOT NULL,
     "winter_storm" int   NOT NULL,
-    CONSTRAINT "pk_state_disasters" PRIMARY KEY (
+    PRIMARY KEY (
         "state_name","year"
      )
 );
@@ -98,7 +98,7 @@ CREATE TABLE "state_energy" (
     "re_hydropower" bigint   NOT NULL,
     "re_solar" bigint   NOT NULL,
     "re_wind" bigint   NOT NULL,
-    CONSTRAINT "pk_state_energy" PRIMARY KEY (
+    PRIMARY KEY (
         "state_name","year"
      )
 );
