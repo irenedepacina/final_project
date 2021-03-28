@@ -2,7 +2,7 @@
 
  Stephanie and Irene
 1. Team discussed what elements we would like to include on dashboard (if possible)
-    - Map (focus)
+    - Map (focus) with slider for time
     - "Baseball Card"
     - US Summary/Purpose
     - graphs (2-3) - Based on Findings
