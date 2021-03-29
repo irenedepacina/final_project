@@ -5,11 +5,12 @@
 -- Run the below query to get all the features required for ML model script into a single table "climate_features"
 -- climate_features table is taken into the ML.ipynb script and read into dataframe
 
-SELECT tem.state_name, mas.state_abb, tem.year, tem.tempc, tem.tempf, emi.co2_emissions, 
+SELECT tem.state_name, tem.year, tem.tempc, emi.co2_emissions,
+	pop.population_thousands, gdp.rgdp_millions,
 	ene.pe_coal, ene.pe_petroleum, ene.pe_naturalgas, ene.pe_nuclear,
 	ene.re_biomass, ene.re_geothermal, ene.re_hydropower, ene.re_solar, ene.re_wind,
-	pop.population_thousands, gdp.rgdp_millions,
-	dis.drought, dis.flooding, dis.freeze, dis.severe_storm, dis.tropical_cyclone, dis.wildfire, dis.winter_storm
+	dis.drought, dis.flooding, dis.freeze, dis.severe_storm, dis.tropical_cyclone, dis.wildfire, dis.winter_storm,
+	mas.state_abb, tem.tempf, ene.pe_totalrenew
 	INTO climate_features
 	FROM state_temp as tem 
 	FULL OUTER JOIN state_emissions as emi 
