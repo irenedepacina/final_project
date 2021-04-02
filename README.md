@@ -27,7 +27,6 @@ Climate change by State in the USA
 -	Climate Change (Temperature) trends over time by state
 -	State by state environmental impact
 -	Are states experiencing climate change equally?
--	Does Political leaning influence states climate change status?
 -  Human impact on the US on climate change?
 - Are some states exacerbating climate change through consumption patterns?
 
