@@ -27,7 +27,7 @@ combined_features_PCA3_K5.csv with all features included and totals for Primary 
 Tableau links for in progress work
 
 Irene:
-https://public.tableau.com/profile/irene.depacina#!/vizhome/project_dash_16169035260380/Dashboard1
+https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1?publish=yes
 
 https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1
 
