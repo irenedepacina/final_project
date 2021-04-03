@@ -20,8 +20,9 @@ https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTU
 4. Created skeleton for JS Web Dashboard if data/group decides to use
 5. Created 
 combined_features_PCA3_K5.csv with all features included and totals for Primary Energy and Disaster Columns for visualization.
+6. Updated file to be used for visualizations "combined_features.csv" to read
 
-Tableau links
+Tableau links for in progress work
 
 Irene:
 https://public.tableau.com/profile/irene.depacina#!/vizhome/project_dash_16169035260380/Dashboard1
