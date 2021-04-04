@@ -27,7 +27,10 @@ combined_features_PCA3_K5.csv with all features included and totals for Primary 
 Tableau links for in progress work
 
 Irene:
+- The dashboard below showcases the climate change trends in the United States over time. The graphs highlight the features; location, population, CO2 emissions, GDP, natural disasters, energy consumption, and renewable energy that a help predict temperature. Based on our machine learning model and accuracy, we have found that location and geographical features are key indicators in predicting temperature. 
+On the other hand, features like natural disasters has little to no effect on temperature. The interactive map clearly shows that states closer to the equator are warmer in comparsion to those that are further away. 
 https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1?publish=yes
+
 
 https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1
 
