@@ -31,9 +31,11 @@ Irene:
 On the other hand, features like natural disasters has little to no effect on temperature. The interactive map clearly shows that states closer to the equator are warmer in comparsion to those that are further away. 
 https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1?publish=yes
 
-
+- The dashboard below showcases a breakdown of features based on the state. The prupose of the analysis is to discover if some states are exacerbating climate climate based on human impact. The dashboard enables users to compare states against each other. Users can compare CO2 emissions, average temperature, energy usage, and natural disasters. 
 https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1
 
+- The dashbaord below reflects the features that effect CO2 emissions. When our machine learning model targets CO2 emssions, we noticed a strong correlation between our features and CO2 emissions. This dashboard compares which features have a strongest correlation.
+https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard2
 
 Stephanie
 https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_USA/FindingsbyCluster?publish=yes
