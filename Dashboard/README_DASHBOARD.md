@@ -2,6 +2,7 @@
 
 ## Presentation Slides:
 https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p
+- storyboard
 
 ## Primary Responsibilities:
  Stephanie and Irene
@@ -23,6 +24,7 @@ https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTU
 5. Created 
 combined_features_PCA3_K5.csv with all features included and totals for Primary Energy and Disaster Columns for visualization.
 6. Updated file to be used for visualizations "combined_features.csv" to read
+7. Decided to use Tableau because Tableau provides a variety of graphs and charts. It provides a lot of features such as layers and filters that we want to utilize in order to best visual our results. 
 
 Tableau links for in progress work
 
