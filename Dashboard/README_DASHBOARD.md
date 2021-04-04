@@ -40,4 +40,14 @@ https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashb
 https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard2
 
 Stephanie
+
+Stephanie:
+
+- The below dashboard focusses on the clusters/classes defined in our unsupervised machine learning model. The map shows the class by colour and when the user hovers over a state, the details for all features used are available for that state. The minimum, maximum and average values by cluster are on the side for comparison. Population size is visually represented by the size of the circle. Time is accounted for by playback feature. There are also additional pages that will be used to examine ratio of different energy types used and the affects of other features on our clusters will be added
 https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_USA/FindingsbyCluster?publish=yes
+
+
+- These dashboards represent our key, high level findings representing temperature, CO2 and the relationship between both. 
+- Upcoming -- using a .csv of our predicted findings, we will be able to visualize the difference in our models using the predictions output with and without state name(geography) included.
+https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Temp_CO2_highlights/CO2_Key_Findings?publish=yes
+
