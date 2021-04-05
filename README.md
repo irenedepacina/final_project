@@ -27,7 +27,6 @@ Climate change by State in the USA
 -	Climate Change (Temperature) trends over time by state
 -	State by state environmental impact
 -	Are states experiencing climate change equally?
--	Does Political leaning influence states climate change status?
 -  Human impact on the US on climate change?
 - Are some states exacerbating climate change through consumption patterns?
 
@@ -72,6 +71,15 @@ Source: https://www.ncdc.noaa.gov/billions/mapping
 ## ML Model to be used
 Unsupervised ML, PCA, KMeans and Neural Network Linear Regression
 
+Please see ML_README for more updates
+
 
 ## Database to be used
-SQL
+Postgres, SQL and PgAdmin
+
+Please see README_ETL for more information on data cleaning and loading process.
+
+## Dashboard
+Tableau - Heroku Hybrid
+
+please see README_DASHBOARD for more information
