@@ -30,6 +30,7 @@ SELECT tem.state_name, tem.year, tem.tempc, emi.co2_emissions,
 		  tem.state_name = pop.state_name AND tem.year = pop.year AND
 		  tem.state_name = gdp.state_name AND tem.year = gdp.year AND
 		  tem.state_name = dis.state_name AND tem.year = dis.year AND
-		  tem.state_name = mas.state_name;
+		  tem.state_name = mas.state_name
+	ORDER BY tem.year, tem.state_name;
 
 -- ******************* END OF FILE ****************************************
