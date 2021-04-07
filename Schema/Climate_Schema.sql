@@ -1,13 +1,15 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
+﻿-- ***************************************************************************************************************************************************--
+-- Prerequisite - create the "climate_change" database in postgres through pgAdmin
+-- Create 9 DB tables to hold the climate change data limited to the region "USA" as country and its states 
+-- Create "state_us_master" as a master table having all possible entries of US states added for state_name
+-- state_name column in state_us_master table serves as foreign key to all the other tables to make sure only US and its states data are inserted
+-- ***************************************************************************************************************************************************--
 
 CREATE TABLE "state_us_master" (
     "state_name" varchar   NOT NULL,
     "state_abb" varchar   NOT NULL,
-    PRIMARY KEY (
-        "state_name"
-     )
+    PRIMARY KEY ("state_name"),
+    UNIQUE ("state_abb")
 );
 
 CREATE TABLE "state_temp" (
@@ -15,9 +17,8 @@ CREATE TABLE "state_temp" (
     "year" int   NOT NULL,
     "tempf" float   NOT NULL,
     "tempc" float   NOT NULL,
-    PRIMARY KEY (
-        "state_name","year"
-     )
+    PRIMARY KEY ("state_name","year"),
+    FOREIGN KEY("state_name") REFERENCES "state_us_master" ("state_name")
 );
 
 CREATE TABLE "nation_temp" (
@@ -25,9 +26,8 @@ CREATE TABLE "nation_temp" (
     "year" int   NOT NULL,
     "tempf" float   NOT NULL,
     "tempc" float   NOT NULL,
-    PRIMARY KEY (
-        "year"
-     )
+    PRIMARY KEY ("year"),
+    FOREIGN KEY("state_name") REFERENCES "state_us_master" ("state_name")
 );
 
 CREATE TABLE "state_season" (
@@ -38,36 +38,32 @@ CREATE TABLE "state_season" (
     "summer" float   NOT NULL,
     "winter" float   NOT NULL,
     "max_warming_season" varchar   NOT NULL,
-    PRIMARY KEY (
-        "state_name"
-     )
+    PRIMARY KEY ("state_name"),
+    FOREIGN KEY("state_name") REFERENCES "state_us_master" ("state_name")
 );
 
 CREATE TABLE "state_population" (
     "state_name" varchar   NOT NULL,
     "year" int   NOT NULL,
     "population_thousands" int   NOT NULL,
-    PRIMARY KEY (
-        "state_name","year"
-     )
+    PRIMARY KEY ("state_name","year"),
+    FOREIGN KEY("state_name") REFERENCES "state_us_master" ("state_name")
 );
 
 CREATE TABLE "state_rgdp" (
     "state_name" varchar   NOT NULL,
     "year" int   NOT NULL,
     "rgdp_millions" int   NOT NULL,
-    PRIMARY KEY (
-        "state_name","year"
-     )
+    PRIMARY KEY ("state_name","year"),
+    FOREIGN KEY("state_name") REFERENCES "state_us_master" ("state_name")
 );
 
 CREATE TABLE "state_emissions" (
     "state_name" varchar   NOT NULL,
     "year" int   NOT NULL,
     "co2_emissions" float   NOT NULL,
-    PRIMARY KEY (
-        "state_name","year"
-     )
+    PRIMARY KEY ("state_name","year"),
+    FOREIGN KEY("state_name") REFERENCES "state_us_master" ("state_name")
 );
 
 CREATE TABLE "state_disasters" (
@@ -80,9 +76,8 @@ CREATE TABLE "state_disasters" (
     "tropical_cyclone" int   NOT NULL,
     "wildfire" int   NOT NULL,
     "winter_storm" int   NOT NULL,
-    PRIMARY KEY (
-        "state_name","year"
-     )
+    PRIMARY KEY ("state_name","year"),
+    FOREIGN KEY("state_name") REFERENCES "state_us_master" ("state_name")
 );
 
 CREATE TABLE "state_energy" (
@@ -98,32 +93,7 @@ CREATE TABLE "state_energy" (
     "re_hydropower" bigint   NOT NULL,
     "re_solar" bigint   NOT NULL,
     "re_wind" bigint   NOT NULL,
-    PRIMARY KEY (
-        "state_name","year"
-     )
+    PRIMARY KEY ("state_name","year"),
+    FOREIGN KEY("state_name") REFERENCES "state_us_master" ("state_name")
 );
-
-ALTER TABLE "state_temp" ADD CONSTRAINT "fk_state_temp_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_us_master" ("state_name");
-
-ALTER TABLE "nation_temp" ADD CONSTRAINT "fk_nation_temp_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_us_master" ("state_name");
-
-ALTER TABLE "state_season" ADD CONSTRAINT "fk_state_season_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_us_master" ("state_name");
-
-ALTER TABLE "state_population" ADD CONSTRAINT "fk_state_population_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_us_master" ("state_name");
-
-ALTER TABLE "state_rgdp" ADD CONSTRAINT "fk_state_rgdp_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_us_master" ("state_name");
-
-ALTER TABLE "state_emissions" ADD CONSTRAINT "fk_state_emissions_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_us_master" ("state_name");
-
-ALTER TABLE "state_disasters" ADD CONSTRAINT "fk_state_disasters_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_us_master" ("state_name");
-
-ALTER TABLE "state_energy" ADD CONSTRAINT "fk_state_energy_state_name" FOREIGN KEY("state_name")
-REFERENCES "state_us_master" ("state_name");
-
+-- *********** END OF SCRIPT ******************************************************--
