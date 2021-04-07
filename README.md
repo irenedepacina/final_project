@@ -71,7 +71,7 @@ Source: https://www.ncdc.noaa.gov/billions/mapping
 ## ML Model to be used
 Unsupervised ML, PCA, KMeans and Neural Network Linear Regression
 
-Please see ML_README for more updates
+Please see <a href="https://github.com/irenedepacina/final_project/blob/Vinutha/Machine_Learning/ML_README.md">ML_README</a>  for more updates 
 
 
 ## Database to be used
