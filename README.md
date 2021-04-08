@@ -1,21 +1,13 @@
 # Climate Change Group Project
 
-
 ## Team 
 - Irene 
 - Sebastian
 - Stephanie
 - Vinutha
 
-## Communication Methods
-1. Primary: Slack Workspace - GroupProject - multiple channels for different topics
-2. Secondary: text/call
-3. Datasets: Google Drive/Github
-https://drive.google.com/drive/folders/1Zz8U47NFCVOTpPoTCnhM6cKdX1Dzs-MN?usp=sharing
-
-
 ## Selected Topic
-Climate change by State in the USA
+            "Climate change by State in the USA"
 
 ## Rationale
 - Dataset availability
@@ -24,62 +16,33 @@ Climate change by State in the USA
 - Climate change is an interesting topic with lot of available data.
 
 ## Discovery Questions
--	Climate Change (Temperature) trends over time by state
--	State by state environmental impact
--	Are states experiencing climate change equally?
--  Human impact on the US on climate change?
+- Climate Change (Temperature) trends over time by state
+- State by state environmental impact
+- Are states experiencing climate change equally?
+- Human impact on the US on climate change?
 - Are some states exacerbating climate change through consumption patterns?
 
-### DataSources:
-- Processed as: df1
-Raw file name: climdiv_state_year.csv
-Exported file name: state_temp.csv
-Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=climdiv_state_year.csv
+## Data Sources:
+- Setting out in search of climate change related datasets for US, ended up identifying some of the sites to have reliable datasets in csv format
+- Saved these datasets into our repository under <a href="https://github.com/irenedepacina/final_project/tree/develop/Resources/data_raw">Resources/data_raw</a>.
+- These datasets are from websites :
+    - https://data.world/environmentdata/
+    - https://www.eia.gov/
+    - https://www.ncdc.noaa.gov/
+- Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Data_Processing/README.md">Data_Processing --> README</a> for more details.
+## Machine Learning
+- Unsupervised Machine Learning performed as exploratory machine learning using Elbow curve, PCA & KMeans
+- Multiple linear regression using SKLearn and Neural Network
+- R Multiple linear regression models for detailed statistical analysis using various data transformation techniques
+- Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Machine_Learning/README.md">Machine_Learning --> README</a> for more details.
 
-- Processed as: df2
-Raw file name: climdiv_national_year.csv
-Exported file name: nation_temp.csv
-Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=climdiv_national_year.csv
+## Database
+- Postgres, SQL and PgAdmin
+- Schema for the database holding all the datasets collected for analysis is as shown below with "state_us_master" designed as master table.
 
-- Processed as: df3
-Raw file name: model_state.csv
-Exported file name: state_season.csv
-Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=model_state.csv
-
-- Processed as: df4
-Raw file name: use_pop_gdp_1.csv
-Exported file name: state_population.csv
-Source: https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#StatisticsIndicators
-(Key statistics and indicators > other > population and GDP)
-
-- Processed as: df5
-Raw file name: use_pop_gdp_2.csv
-Exported file name: state_rgdp.csv
-Source: https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#StatisticsIndicators
-(Key statistics and indicators > other > population and GDP)
-
-- Processed as: df6
-Raw file name: t2_co2_emissions.csv
-Exported file name: state_emissions.csv
-Source: https://www.eia.gov/environment/emissions/state/
-
-- Processed as: df7
-Raw file name: clean_weather.csv
-Exported file name: state_disasters.csv
-Source: https://www.ncdc.noaa.gov/billions/mapping
-
-## ML Model to be used
-Unsupervised ML, PCA, KMeans and Neural Network Linear Regression
-
-Please see <a href="https://github.com/irenedepacina/final_project/blob/Vinutha/Machine_Learning/ML_README.md">ML_README</a>  for more updates 
-
-
-## Database to be used
-Postgres, SQL and PgAdmin
-
-Please see README_ETL for more information on data cleaning and loading process.
+<img src = "Database/climate_ERD.png"></img>
 
 ## Dashboard
-Tableau - Heroku Hybrid
-
-please see README_DASHBOARD for more information
+- Tableau - Heroku Hybrid
+- Please find presentation of our analysis on <a href="https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p">Google Slides</a> here
+- Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Dashboard/README.md">Dashboard --> README</a> for more details.
