@@ -134,7 +134,7 @@ dmypy.json
 .pyre/
 
 # handle .DS_Store
-.DS_Store
+#.DS_Store
 
 # Ignore config.py
 config.py
