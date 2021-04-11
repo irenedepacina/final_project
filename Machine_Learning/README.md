@@ -52,10 +52,70 @@
 - In depth analysis of the features and running the machine learning model for various combinations like predicting tempC with just state, year having a near perfect R-squared of 97.55, led to the inference that the dataset has confounding features and some of the features of the dataset are behaving as proxies for US states. Statistically, this causes spurious association. 
 - Considering the above observations, a model was built to predict tempC based on only the human impact features CO2_emissions, population, rgdp, 9 energy consumption features. The R-Squared for this model was found to be 43.68%.
 - This model was taken up for further indepth statistical analysis using different data transformation techniques.
-# Detailed Statistical analysis using Data Transformations :
-- To be updated soon
-- <<<<<>>>>>
-- <<<<<>>>>>
+
+### Statsmodels and SK Learn: Multiple Linear Regression 
+
+#### Data Transformation
+- A logarithmic transformation was applied to the data to reduce the variability as well as the skewness of several variables such as real GDP measured in millions of dollars, population in thousands, CO2 emissions in million metric tons, and energy consumption by source in billion BTU. 
+- The log transformation also improved the linear relationship between the target variable and each of the features. 
+- Unlike the Yeo-Johnson Power transformation that was initially applied, logarithm transformations improved model fit without compromising the interpretability of the model. In fact, when the target and n number of features were logged transformed, each estimated slope coefficient in the multiple linear regression was interpreted as the average percent change in the target variable that is associated with a one percent change in the nth feature while holding all the other features constant. 
+
+#### Results
+
+<p align="center">
+    <strong> Model 1 </strong> <br>
+    <img src = 'ML_Resources/regmodel1.png''>
+</p>
+
+- After fitting the initial model on untransformed data, it was found that 43.6% of the variation in temperature was associated with variation in real GDP, population, CO2 emissions and several energy consumption levels by source. 
+
+<p align="center">
+    <strong> Model 2 </strong> <br>
+    <img src = 'ML_Resources/regmodel2.png''>
+</p>
+
+- After fitting the linear model on log transformed data, the R-squared improved to 54.7%. It would seem that more than half of the variation in logged temperature was explained by the variation in log transformed human-related features.
+- However, further analysis revealed that this relationship was confounded by state name. 
+- Firtsly, the human-related features were able to predict the state name with 98.48% accuracy using just a simple neural network consisting of a single hidden layer of 100 nodes. This implies that state_name has a great influence on GDP, population, CO2 emission and energy consumption. It is reasonbable to believe that location contains unique features like demographics and information about the local economy which influence these human-related features. 
+- Secondly, regressing temperature on state name revealed that these two variables were highly correlated with each other. This correlation was largely driven by how location contains geographical and climate features that greatly influence temperature.
+- Since, state name influences both the target (temperature) and the human-related features, it can be concluded that this regression is spurious. 
+
+
+<p align="center">
+    <strong> Model 3 </strong> <br>
+    <img src = 'ML_Resources/regmodel3.png''>
+</p>
+
+- Given the spurious relationship of the previous linear model, the target was switched to log_co2_emissions instead. 
+- CO2 emissions is highly correlated with temperature. A state can indirectly associate the impact of its population, real GDP and energy consumption patterns with rising average annual temperature through the CO2 emissions that it produces. 
+- Temperature, nuclear energy and geothermal energy consumption were dropped from the model since they were not statistically significant at a 5% significance level.
+- About 93% of the variation in the log_co2_emissions is explained by the variation in the logged transformed real GDP, population and energy consumption levels by source. 
+- On average, a 1% increase in real GDP is associated with a -0.3398% change in CO2 emissions holding all the other variables constant.
+- On average, a 1% increase in population is associated with a 0.3750% change in CO2 emissions holding all the other variables constant.
+- On average, a 1% increase in coal energy consumption is associated with a 0.0676% change in CO2 emissions while holding all the other variables constant.
+- On average, a 1% increase in petroleum energy consumption is associated with a 0.6334% change in CO2 emissions holding all the other variables constant.
+- On average, a 1% increase in natural gas energy consumption is associated with a 0.2510% change in CO2 emissions while holding all the other variables constant.
+- On average, a 1% increase in biomass energy consumption is associated with a -0.0920% change in CO2 emissions while holding all the other variables constant.
+- On average, a 1% increase in hydropower energy consumption is associated with a 0.0109% change in CO2 emissions while holding all the other variables constant.
+- On average, a 1% increase in solar energy consumption is associated with a -0.0224% change in CO2 emissions while holding all the other variables constant.
+- On average, a 1% increase in wind energy consumption is associated with a 0.0059% change in CO2 emissions while holding all the other variables constant.
+
+
+#### Key takeaways
+- A model that solely uses human-related features to predict climate change measured  in average annual state temperature is not accurate. This is due to lurking variables such as location which influence both temperature and human-related features such as population, GDP, and energy consumption patterns. 
+- We can create a model that quantifies the impact of a state's energy consumption pattern on CO2 emissions, the main culprit of rising temperatures. 
+- Energy consumption from non-renewable sources contribute to increasing CO2 emissions since coal, petroleum, and natural gas all had statistically significant positive slope coefficients. 
+- Energy consumption from renewable sources  either reduce CO2 emissions or contribute a negligible amount to it since biomass, hydropower, solar and wind all had statistically significant negative or close to zero slope coefficients. 
+- The magnitude of the point estimates of the slope coefficents of the renewable energies were smaller than that of nonrenewable energies. This implies that consuming energy from biomass, hydropower, solar and wind does not reduce CO2 emissions by the same amount that energy consumption from coal, petroleum and natuaral gas increases it. 
+
+
+
+
+
+
+
+
+
 
 ---
 ---
