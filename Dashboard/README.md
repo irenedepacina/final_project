@@ -1,12 +1,14 @@
-# Dashboard Priorities and Progress
+# Visualizations
+
+## Our Story
+
+We wanted to gain insight on climate change in the United States. We are interested to know if we quantify the humna impact on climate change in the USA. In addition, we want to know if states are experiencing climate change equally and if some states are exacerbating climate change more than others.  
 
 ## Presentation Slides:
 https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p
-- storyboard
 
 ## Primary Responsibilities:
  Stephanie and Irene
-
 
 1. Team discussed what elements we would like to include on dashboard (if possible)
     - Interactive Map (focus) with slider for time
@@ -30,7 +32,7 @@ https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTU
 
 7. Decided to use Tableau because Tableau provides a variety of graphs and charts. It provides a lot of features such as layers and filters that we want to utilize in order to best visual our results. It suits our needs of the project to be able to easily combine geographical (mapped) data with charts of our feature variables.
 
-8. Created a webpage using HTML, CSS, and Javascript to better convey our story and enhance user experience.
+8. Decided to make a webpage using HTML, CSS, and Javascript to better convey our story and enhance user experience.
 
 
 ## Dashboard Descriptions and Tableau Links
@@ -56,5 +58,15 @@ https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Temp_CO2_highli
 ## Webpage
 
 - Used HTML, CSS, and Javacript to create a webpage
-- The webpage is divided into 
+- The webpage is divided into 7 sections:
+    - Climate Trends
+    - Temperature Findings
+    - CO2 Emissions Findings
+    - Our Model
+    - Predictions and Accuracy
+    - Energy Consumption
+    - State Comparison
+    - Conclusions/Key Takeaways
+- The structure of the webpage is to showcase the biggest takeaways in less detail first and then the lower importance facts in more detail
+- The webpage highlights all of the findings from the climate change datasets and machine learning model. The findings are visualized in a manner that is honest and easily accessible. The dashboards enables users to see trends and statistics based on selected years, states, and clusters. 
 
