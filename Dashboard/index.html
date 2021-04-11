@@ -20,10 +20,10 @@
                             <li><a href="#trends">Climate Trends</a></li>
                             <li><a href="#temperature">Temperature Findings</a></li>
                             <li><a href="#emissions">Emissions Findings</a></li>
-                            <li><a href="#model">Model</a></li>
+                            <li><a href="#models">Models</a></li>
                             <li><a href="#predictions">Predictions</a></li>
                             <li><a href="#energy">Energy</a></li>
-                            <li><a href="#states">States Comparison</a></li>
+                            <li><a href="#states">State Comparison</a></li>
                             <li><a href="#conclusions">Conclusions</a></li>
                         </ul>
                     </nav>
@@ -39,7 +39,13 @@
                     <section id="Introduction">
                         <h2>Introduction</h2>
                         <p> 
-                            Overview of this analysis is to gain insight on climate change trends over time the United States. We amin to see the climate change trends in temperature over time and which features - geographical and human impacted - have an effect on temperature. We are interested to know if states are experiencing climate change equally and if some states are exacerbating climate change more than others.
+                            Overview of this analysis is to gain insight on climate change trends over time the United States. 
+                            <ul>
+                                <li>Can we quantify the human impact on climate change in the USA?</li>
+                                <li>Does human impact affect how states individually experience climate change?</li>
+                                <li>Are there climate change trends evident in temperature over time?</li>
+                                <li>Is there a possibility to predict any other feature like CO2, year, state disasters from the datasets?</li>
+                            </ul>
                         </p>
                     </section>
 
@@ -202,60 +208,21 @@
             
             
                     <!-- MACHINE LEARNING MODEL DASHBOARD -->
-                    <section id="model">
-                        <h2> Model</h2>
+                    <section id="models">
+                        <h2> Models</h2>
                         <p>
-                            Our model: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
+                            The dataset considered for this analysis is pertaining to climate change in the United States of America. 
+                            The human interventions contributing to climate change are specifically considered along with other set of features like time and various states of US. 
+                            After the data was processed, features were selected for thorough analysis based on the understanding of the features and its likely contribution to climate change.
+                            Given that this dataset has lot to be explored in understandings the clusters of data, Unsupervised Machine learning model was employed.
+                            Post Unsupervised ML, it was determined that temp, CO2, year, state, disasters of a state could be considered as potential targets for supervised ML with rest supplied as features.
                         </p>
                         <div class='section4' id='viz1618112198592' style='position: relative'>
-                            <noscript>
-                                <a href='#'>
-                                    <img alt='Climate Change Findings By Class ' 
-                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_Classes&#47;FindingsbyCluster&#47;1_rss.png' 
-                                    style='border: none' />
-                                </a>
-                            </noscript>
-                            <object class='tableauViz'  style='display:none;'>
-                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                                <param name='embed_code_version' value='3' /> 
-                                <param name='site_root' value='' />
-                                <param name='name' value='Climate_Change_Classes&#47;FindingsbyCluster' />
-                                <param name='tabs' value='no' />
-                                <param name='toolbar' value='yes' />
-                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_Classes&#47;FindingsbyCluster&#47;1.png' /> 
-                                <param name='animate_transition' value='yes' />
-                                <param name='display_static_image' value='yes' />
-                                <param name='display_spinner' value='yes' />
-                                <param name='display_overlay' value='yes' />
-                                <param name='display_count' value='yes' />
-                                <param name='language' value='en' />
-                            </object>
-                        </div>                
-                        
-                        <script type='text/javascript'>                    
-                            var divElement = document.getElementById('viz1618112198592');                   
-                            var vizElement = divElement.getElementsByTagName('object')[0];                    
-                            if ( divElement.offsetWidth > 800 ) { 
-                                vizElement.style.minWidth='200px';
-                                vizElement.style.maxWidth='1500px';
-                                vizElement.style.width='100%';
-                                vizElement.style.minHeight='427px';
-                                vizElement.style.maxHeight='1027px';
-                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                            } else if ( divElement.offsetWidth > 500 ) { 
-                                vizElement.style.width='100%';
-                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                            } else { 
-                                vizElement.style.width='100%';
-                                vizElement.style.height='1327px';}                     
-                            var scriptElement = document.createElement('script');                    
-                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                        </script>
+                            <h3> Unsupervised Model</h3>
+                            <div class='tableauPlaceholder' id='viz1618180464389' style='position: relative'><noscript><a href='#'><img alt='Cluster Trends ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_Classes&#47;ClusterTrends&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Climate_Change_Classes&#47;ClusterTrends' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_Classes&#47;ClusterTrends&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618180464389');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1027px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1027px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
                         <div class='tableauPlaceholder' id='viz1618111880654' style='position: relative'>
+                            <h3> Supervised Model</h3>
                             <noscript>
                                 <a href='#'>
                                     <img alt='NN-SKL Models ' 
@@ -309,9 +276,9 @@
                     <section id="predictions">
                         <h2>Predictions</h2>
                         <p>
-                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-
+                            In depth analysis of the features and running the machine learning model for various combinations like predicting temperature with just state, year having a near perfect R-squared of 97.55, led to the inference that the dataset has confounding features and some of the features of the dataset are behaving as proxies for US states. Statistically, this causes spurious association.
+                            Considering the above observations, a model was built to predict temperature based on only the human impact features CO2 emissions, population, real GDP, renewable and non-renewbale energy consumption features. The R-Squared for this model was found to be 43.68%.
+                            Human-related features were able to predict the state name with 98.48% accuracy using just a simple neural network consisting of a single hidden layer of 100 nodes. This implies that state name (location) has a great influence on GDP, population, CO2 emission and energy consumption. It is reasonbable to believe that location contains unique features like demographics and information about the local economy which influence these human-related features.
                         </p>
                         <div class='section5' id='viz1618111822965' style='position: relative'>
                             <noscript>
@@ -409,7 +376,7 @@
                     <section id="energy">
                         <h2>Energy Consumption</h2>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                            Compare clusters' average renewable and non-renewable energy by selecting a cluster/s on the filter below.
 
                         </p>
                         <div class='section6' id='viz1618112137527' style='position: relative'>
@@ -464,6 +431,9 @@
                     <!-- STATE COMPARISON DASHBOARD -->
                     <section id="states">
                         <h2>State Comparison</h2>
+                        <p>
+                            Compare states based on renewable and non-renewable energy given their average temperaure and CO2 emissions selecting them on the map below.
+                        </p>
                         <div class='section7' id='viz1618093135105' style='position: relative'>
                             <noscript>
                                 <a href='#'>
@@ -519,7 +489,14 @@
                      <section id="conclusions">
                         <h2>Conclusions</h2>
                         <p> 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            Key Takeaways
+                            <ul>
+                                <li>A model that solely uses human-related features to predict climate change measured in average annual state temperature is not accurate</li>
+                                <li>Location has major influence both temperature and human-related features</li>
+                                <li>A model that quantifies the impact of a state's energy consumption pattern on CO2 emissions, the main culprit of rising temperatures</li>
+                                <li>Energy consumption from non-renewable sources such as coal, petroleum, and natural gas contribute to increasing CO2 emissions</li>
+                                <li>Energy consumption from renewable sources such as biomass, hydropower, solar, and wind either reduce CO2 emissions </li>
+                            </ul>
                         </p>
 
                         <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>   
