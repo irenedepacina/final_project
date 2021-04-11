@@ -2,10 +2,11 @@
 
 ## Our Story
 
-We wanted to gain insight on climate change in the United States. We are interested to know if we quantify the humna impact on climate change in the USA. In addition, we want to know if states are experiencing climate change equally and if some states are exacerbating climate change more than others.  
+We wanted to gain insight on climate change in the United States. We are interested to know if we quantify the human impact on climate change in the USA. In addition, we want to know if states are experiencing climate change equally and if some states are influencing climate change more than others.  
 
 ## Presentation Slides:
-https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p
+ - <a href="https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p">Climate Trends Slides</a>
+
 
 ## Primary Responsibilities:
  Stephanie and Irene
@@ -37,23 +38,45 @@ https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTU
 
 ## Dashboard Descriptions and Tableau Links
 
-Irene:
-- The dashboard below showcases the climate change trends in the United States over time. The graphs highlight the features; location, population, CO2 emissions, GDP, natural disasters, energy consumption, and renewable energy that a help predict temperature. Based on our machine learning model and accuracy, we have found that location and geographical features are key indicators in predicting temperature. On the other hand, features like natural disasters has little to no effect on temperature. The interactive map clearly shows that states closer to the equator are warmer in comparsion to those that are further away. 
-https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1?publish=yes
+### Irene:
+- The dashboard below showcases the climate change trends in the United States over time. The graphs highlight the features; location, population, CO2 emissions, GDP, natural disasters, energy consumption, and renewable energy that a help predict temperature. Based on our machine learning model and accuracy, we have found that location and geographical features are key indicators in predicting temperature. On the other hand, features like natural disasters has little to no effect on temperature. The interactive map clearly shows that states closer to the equator are warmer in comparison to those that are further away. 
 
-- The dashboard below showcases a breakdown of features based on the state. The prupose of the analysis is to discover if some states are exacerbating climate climate based on human impact. The dashboard enables users to compare states against each other. Users can compare CO2 emissions, average temperature, energy usage, and natural disasters. 
-https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1
+    <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1?publish=yes">Climate Trends Overall</a>
 
+- The dashboard below showcases a breakdown of features based on the state. The purpose of the analysis is to discover if some states are exacerbating climate climate based on human impact. The dashboard enables users to compare states against each other. Users can compare CO2 emissions, average temperature, energy usage, and natural disasters. 
 
-Stephanie:
-
-- The below dashboard focusses on the clusters/classes defined in our unsupervised machine learning model. The map shows the class by colour and when the user hovers over a state, the details for all features used are available for that state. The minimum, maximum and average values by cluster are on the side for comparison. Population size is visually represented by the size of the circle. Time is accounted for by playback feature. There are also additional pages that will be used to examine ratio of different energy types used and the affects of other features on our clusters will be added
-https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_USA/FindingsbyCluster?publish=yes
+    <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1">Climate Trends by State</a>
 
 
-- These dashboards represent our key, high level findings representing temperature, CO2 and the relationship between both. 
-- Upcoming -- using a .csv of our predicted findings, we will be able to visualize the difference in our models using the predictions output with and without state name(geography) included.
-https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Temp_CO2_highlights/CO2_Key_Findings?publish=yes
+### Stephanie:
+#### Classes ####
+- The below dashboard focuses on the clusters/classes defined in our unsupervised machine learning model. The map shows the class by colour and when the user hovers over a state, the details for all features used are available for that state. There are the minimum, maximum and averages tables for all features beside the  map. When a user clicks on their state, the minimum, maximum and average values of their class are highlighted on the side for comparison. Population size is visually represented by the size of the circle. Time is accounted for by playback feature. 
+
+    <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_Classes/ClusterTrends?publish=yes">Climate Trends by Class</a>
+- This dashboard is an accessory to the above Clusters/Classes dashboard. It provides a more detailed look into the types and quantities of renewable and non renewable energies used in each class. The user is able to click through or select the classes they wish to inspect and the pie charts will adjust accordingly.
+
+    <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_Classes/EnergyusebyCluster">Energy Use by Class</a>
+
+#### Key Findings ####
+- The Temperature Key Findings dashboard provides high-level insight into the temperature trends by State over time and our key findings from our analysis. The user can choose the year they wish to see or roll the scroll bar to see changes over time.
+
+    <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Temp_CO2_highlights/Temp_Key_Findings">Temperature Key Findings</a>
+
+- The CO2 Key Findings Dashboard is very similar to the temperature dashboard, as it visualizes CO2 Emissions by State over time. The board also illustrates a comparison of renewable and non renewable energy consumption over time by state.
+
+
+    <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Temp_CO2_highlights/CO2_Key_Findings">CO2 Emissions Key Findings</a>
+
+#### Machine Learning and Predictions ####
+- The below dashboards illustrate our Supervised ML models and why CO2 is a better target variable compared to temperature. 
+
+    <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Predictions_16178534877910/NN-SKLModels">Temperature Predictions</a>
+
+    <a href ="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Predictions_16178534877910/FeatureModels">Temperature Key Features</a>
+
+    <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Predictions_16178534877910/CO2Model">CO2 Predictions</a>
+
+
 
 ## Webpage
 

@@ -32,8 +32,9 @@
     - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1?publish=yes">location and geographical features are key indicators</a>
     - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1">compare CO2 emissions, average temperature, energy usage, and natural disasters</a>
     - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard2">features having strong correlation</a>
-    - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_USA/FindingsbyCluster?publish=yes">unsupervised machine learning model clusters</a>
-    - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Temp_CO2_highlights/CO2_Key_Findings?publish=yes">Machine Learning Predictions</a>
+    - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_Classes/ClusterTrends?publish=yes">Climate Trends by Class (Unsupervised Learning)</a>
+    - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Predictions_16178534877910/NN-SKLModels">Supervised Machine Learning Predictions</a>
+    
 - Please find presentation of our analysis on <a href="https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p">Google Slides</a>
 - Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Dashboard/README.md">Dashboard --> README</a> for more details.
 
