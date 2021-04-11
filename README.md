@@ -1,85 +1,61 @@
 # Climate Change Group Project
 
-
 ## Team 
 - Irene 
 - Sebastian
 - Stephanie
 - Vinutha
 
-## Communication Methods
-1. Primary: Slack Workspace - GroupProject - multiple channels for different topics
-2. Secondary: text/call
-3. Datasets: Google Drive/Github
-https://drive.google.com/drive/folders/1Zz8U47NFCVOTpPoTCnhM6cKdX1Dzs-MN?usp=sharing
-
-
-## Selected Topic
-Climate change by State in the USA
+## Selected Topic : <i><b>"Climate change by State in the USA"</i></b>
 
 ## Rationale
-- Dataset availability
+- Climate change is an interesting topic with lot of available data.
 - US is one of the largest emitters of CO2 in developed countries.
 - Population density and land mass lends itself to analysis
-- Climate change is an interesting topic with lot of available data.
+- Dataset availability
 
 ## Discovery Questions
--	Climate Change (Temperature) trends over time by state
--	State by state environmental impact
--	Are states experiencing climate change equally?
--  Human impact on the US on climate change?
+- Can we quantify the human impact on climate change in the USA?
+- Does human impact affect how states individually experience climate change?
+- Are there climate change trends evident in temperature over time?
 - Are some states exacerbating climate change through consumption patterns?
+- Using the datasets, can we predict temperature using human impacts on climate change versus geographical information alone?
+- Is there a possibility to predict any other feature like CO2, year, state disasters from the datasets?
 
-### DataSources:
-- Processed as: df1
-Raw file name: climdiv_state_year.csv
-Exported file name: state_temp.csv
-Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=climdiv_state_year.csv
-
-- Processed as: df2
-Raw file name: climdiv_national_year.csv
-Exported file name: nation_temp.csv
-Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=climdiv_national_year.csv
-
-- Processed as: df3
-Raw file name: model_state.csv
-Exported file name: state_season.csv
-Source: https://data.world/environmentdata/analysis-of-noaa-climate-change-data/workspace/file?filename=model_state.csv
-
-- Processed as: df4
-Raw file name: use_pop_gdp_1.csv
-Exported file name: state_population.csv
-Source: https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#StatisticsIndicators
-(Key statistics and indicators > other > population and GDP)
-
-- Processed as: df5
-Raw file name: use_pop_gdp_2.csv
-Exported file name: state_rgdp.csv
-Source: https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#StatisticsIndicators
-(Key statistics and indicators > other > population and GDP)
-
-- Processed as: df6
-Raw file name: t2_co2_emissions.csv
-Exported file name: state_emissions.csv
-Source: https://www.eia.gov/environment/emissions/state/
-
-- Processed as: df7
-Raw file name: clean_weather.csv
-Exported file name: state_disasters.csv
-Source: https://www.ncdc.noaa.gov/billions/mapping
-
-## ML Model to be used
-Unsupervised ML, PCA, KMeans and Neural Network Linear Regression
-
-Please see ML_README for more updates
-
-
-## Database to be used
-Postgres, SQL and PgAdmin
-
-Please see README_ETL for more information on data cleaning and loading process.
+## Key Findings from the analysis
+- To be updated shortly
 
 ## Dashboard
-Tableau - Heroku Hybrid
+- Visualizations were created using Tableau and Heroku Hybrid.
+- HTML / Heroku page <a href="placeholder">Place Holder link should be updated</a>
+- Interactive Tableau visualizations
+    - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1?publish=yes">location and geographical features are key indicators</a>
+    - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1">compare CO2 emissions, average temperature, energy usage, and natural disasters</a>
+    - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard2">features having strong correlation</a>
+    - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_USA/FindingsbyCluster?publish=yes">unsupervised machine learning model clusters</a>
+    - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Temp_CO2_highlights/CO2_Key_Findings?publish=yes">Machine Learning Predictions</a>
+- Please find presentation of our analysis on <a href="https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p">Google Slides</a>
+- Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Dashboard/README.md">Dashboard --> README</a> for more details.
 
-please see README_DASHBOARD for more information
+## Data Sources:
+- While in search of climate change related datasets for US, ended up identifying some of the sites to have reliable datasets in csv format.
+- Saved these datasets into repository under <a href="https://github.com/irenedepacina/final_project/tree/develop/Resources/data_raw">Resources/data_raw</a>.
+- These datasets are from websites :
+    - https://data.world/environmentdata/
+    - https://www.eia.gov/
+    - https://www.ncdc.noaa.gov/
+- Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Data_Processing/README.md">Data_Processing --> README</a> for more details.
+
+## Database
+- Datasets of .csv file format, hence decided on Postgres DB, using SQL and PgAdmin
+- Total of 10 tables were designed, created and loaded into climate_change PostgreSQL DB.
+- Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Database/README.md">Database --> README</a> for more details.
+
+## Machine Learning
+- Unsupervised Machine Learning performed as exploratory machine learning using PCA, Elbow curve & KMeans Algorithm
+- Multiple linear regression using Neural Network and SKLearn
+- Multiple linear regression models using R to identify confounding features and features behaving as proxies for US states
+- Detailed statistical analysis using various data transformation techniques
+- Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Machine_Learning/README.md">Machine_Learning --> README</a> for more details.
+---
+---
