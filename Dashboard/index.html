@@ -1,5 +1,6 @@
-<!DOCTYPE html>
 
+
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -7,372 +8,495 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <!-- STYLES CSS -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>  -->
-        <link rel="stylesheet" href="static/css/style.css"> 
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>  -->
-
+        <link rel="stylesheet" href="static/css/style.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
         <title>Climate Change Trends in the US</title>
     </head>
-
-    <!-- <style> 
-        *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-      }
-      
-      body{
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        background:white;
-        line-height: 1.6;
-        height:100vh;
-      }
-      
-      .container {
-        width: 100%;
-        height: 100%;
-        scroll-behavior: smooth;
-      }
-      
-      .navbar {
-        position: fixed;
-        top: 0;
-        z-index: 1;
-        display: flex;
-        width: 100%;
-        height: 60px;
-        background:rgb(0,0,0,0.4);
-        justify-content: left;
-      }
-      
-      .navbar ul {
-        display: flex;
-        list-style: none;
-        width: 100%;
-        justify-content: center;
-      }
-      
-      .navbar ul li {
-        margin: 0 4rem;
-        padding: 1rem;
-      }
-      
-      .navbar ul li a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-      }
-      
-      .navbar ul li a:hover {
-        color: skyblue
-      }
-      
-      section {
-        display: contents;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 125vh;
-      }
-      
-      section h2{
-        font-size: 4rem;
-      }
-      
-      section p {
-        font-size: 1.5rem;
-      }
-      
-    </style> -->
-
-    <body>
-        <!-- Title -->
-        <div class="col-md-12 jumbotron text-center" style="background-image: url(https://climatechangeconnection.org/wp-content/uploads/2018/09/bigstock-Polar-Bear-In-Sea-2330799-cropped.jpg); background-size: 100%; height: 50%;">
-            <h1>Climate Change is Real</h1>
-        </div>
     
-        <!-- HEADERS FOR THE DIFFERENT SECTIONS -->
-        <div class="container">
-            <nav class='navbar'>
-                <ul>
-                    <li><a href="#trends">Climate Trends</a></li>
-                    <li><a href="#location">Location</a></li>
-                    <li><a href="#emissions">CO2 Emissions</a></li>
-                    <li><a href="#states">States</a></li>
-                    <li><a href="#class">Class</a></li>
-                    <li><a href="#predictions">Predictions</a></li>
-                </ul>
-            </nav>
+    <body>
+        <div class="box-area">
+            <header>
+                <div class="wrapper">
+                    <!-- <div class="logo">
 
-
-            <!-- FIRST DASHBOARD -->
-            <section id="trends">
-                <h2>Climate Trends</h2>
-
-                <div class='section1' id='viz1617647372311' style='position: relative'>
-                    <noscript>
-                        <a href='#'>
-                            <img alt='Dashboard 1 ' 
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;ClimateChangeTrends_16174174601980&#47;Dashboard1&#47;1_rss.png' 
-                            style='border: none' />
-                        </a>
-                    </noscript>
-                    <object class='tableauViz'  style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                        <param name='embed_code_version' value='3' /> 
-                        <param name='site_root' value='' />
-                        <param name='name' value='ClimateChangeTrends_16174174601980&#47;Dashboard1' />
-                        <param name='tabs' value='no' />
-                        <param name='toolbar' value='yes' />
-                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;ClimateChangeTrends_16174174601980&#47;Dashboard1&#47;1.png' /> 
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='language' value='en' />
-                    </object>
-                </div> 
+                    </div> -->
+                    <nav class='navbar'>
+                        <ul>
+                            <li><a href="#trends">Climate Trends</a></li>
+                            <li><a href="#temperature">Temperature Findings</a></li>
+                            <li><a href="#emissions">Emissions Findings</a></li>
+                            <li><a href="#model">Model</a></li>
+                            <li><a href="#predictions">Predictions</a></li>
+                            <li><a href="#energy">Energy</a></li>
+                            <li><a href="#states">States Comparison</a></li>
+                            <li><a href="#conclusions">Conclusions</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="banner-area">
+                <h2> CLIMATE CHANGE IN THE US</h2>
+            </div>
             
-                
-                <script type='text/javascript'>                   
-                    var divElement = document.getElementById('viz1617647372311');                    
-                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-                    if ( divElement.offsetWidth > 800 ) { 
-                        vizElement.style.minWidth='420px';
-                        vizElement.style.maxWidth='1900px';
-                        vizElement.style.width='100%';
-                        vizElement.style.minHeight='587px';
-                        vizElement.style.maxHeight='1527px';
-                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    } else if ( divElement.offsetWidth > 500 ) { 
-                        vizElement.style.minWidth='420px';
-                        vizElement.style.maxWidth='1900px';
-                        vizElement.style.width='100%';
-                        vizElement.style.minHeight='587px';
-                        vizElement.style.maxHeight='1527px';
-                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    } else { 
-                        vizElement.style.width='100%';
-                        vizElement.style.height='1827px';}                     
-                    var scriptElement = document.createElement('script');                    
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            <div class="content-area">
+                <div class="wrapper">
+
+                    <section id="Introduction">
+                        <h2>Introduction</h2>
+                        <p> 
+                            Overview of this analysis is to gain insight on climate change trends over time the United States. We amin to see the climate change trends in temperature over time and which features - geographical and human impacted - have an effect on temperature. We are interested to know if states are experiencing climate change equally and if some states are exacerbating climate change more than others.
+                        </p>
+                    </section>
+
+                    <!-- FIRST DASHBOARD -->
+                    <section id="trends">
+                        <h2>Climate Trends</h2>
                         
-                </script>
 
-            </section>
+                        <div class='section1' id='viz1618090256411' style='position: relative'>
+                            <noscript>
+                              <a href='#'>
+                                <img alt='Dashboard 1 ' 
+                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;ClimateChangeTrends_16174174601980&#47;Dashboard1&#47;1_rss.png' 
+                                style='border: none' />
+                              </a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='ClimateChangeTrends_16174174601980&#47;Dashboard1' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;ClimateChangeTrends_16174174601980&#47;Dashboard1&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                                <param name='filter' value='publish=yes' />
+                            </object>
+                        </div>                
+                          
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1618090256411');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            if ( divElement.offsetWidth > 800 ) { 
+                                vizElement.style.minWidth='420px';
+                                vizElement.style.maxWidth='1800px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='587px';
+                                vizElement.style.maxHeight='877px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else if ( divElement.offsetWidth > 500 ) { 
+                                vizElement.style.minWidth='420px';
+                                vizElement.style.maxWidth='1800px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='587px';
+                                vizElement.style.maxHeight='877px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height='1427px';
+                            }                     
+                            var scriptElement = document.createElement('script');                    
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+            
+                    </section>
+            
+                    <!-- SECOND DASHBOARD -->
+                    <section id="temperature">
+                        <h2>Temperature Findings</h2>
+                        <div class='section2' id='viz1617677024233' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='Temp_Key_Findings ' 
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temp_CO2_highlights&#47;Temp_Key_Findings&#47;1_rss.png' 
+                                    style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='Temp_CO2_highlights&#47;Temp_Key_Findings' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temp_CO2_highlights&#47;Temp_Key_Findings&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                            </object>
+                        </div>                
+            
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1617677024233');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            if ( divElement.offsetWidth > 800 ) 
+                            { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } 
+                            else if ( divElement.offsetWidth > 500 ) { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } 
+                            else { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height='727px';}                     
+                            var scriptElement = document.createElement('script');                    
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+            
+                    </section>
+            
+            
+                    <!-- THIRD DASHBOARD -->
+                    <section id="emissions">
+                        <h2> Emissions Findings</h2>
+                        <div class='section3' id='viz1617749687957' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='CO2_Key_Findings ' 
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temp_CO2_highlights&#47;CO2_Key_Findings&#47;1_rss.png' 
+                                    style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='Temp_CO2_highlights&#47;CO2_Key_Findings' />
+                                <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temp_CO2_highlights&#47;CO2_Key_Findings&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                            </object>
+                        </div>        
+                                    
+                        <script type='text/javascript'>                    
+                        var divElement = document.getElementById('viz1617749687957');                    
+                        var vizElement = divElement.getElementsByTagName('object')[0];                    
+                        if ( divElement.offsetWidth > 800 ) 
+                        { 
+                            vizElement.style.width='100%';
+                            vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                        } 
+                        else if ( divElement.offsetWidth > 500 ) 
+                        { 
+                            vizElement.style.width='100%';
+                            vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                        } 
+                        else { 
+                            vizElement.style.width='100%';vizElement.style.height='877px';
+                        }                     
+                        var scriptElement = document.createElement('script');                    
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+                    </section>
+            
+            
+                    <!-- FOURTH DASHBOARD -->
+                    <section id="model">
+                        <h2> Model</h2>
+                        <p>
+                            Our model: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
-            <!-- SECOND DASHBOARD -->
-            <section id="location">
-                <h2> CLIMATE CHANGE IS REAL: Comparison on the State Level</h2>
 
-                <div class='section2' id='viz1617651905472' style='position: relative'>
-                    <noscript>
-                        <a href='#'>
-                            <img alt='Dashboard 1 ' 
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8H&#47;8HSJQH9QS&#47;1_rss.png' 
-                            style='border: none' />
-                        </a>
-                    </noscript>
-                    <object class='tableauViz'  style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                        <param name='embed_code_version' value='3' /> 
-                        <param name='path' value='shared&#47;8HSJQH9QS' /> 
-                        <param name='toolbar' value='yes' />
-                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8H&#47;8HSJQH9QS&#47;1.png' /> 
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='language' value='en' />
-                    </object>
-                </div>                
+                        </p>
+                        <div class='tableauPlaceholder' id='viz1618112198592' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='Climate Change Findings By Class ' 
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_Classes&#47;FindingsbyCluster&#47;1_rss.png' 
+                                    style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='Climate_Change_Classes&#47;FindingsbyCluster' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_Classes&#47;FindingsbyCluster&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                            </object>
+                        </div>                
+                        
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1618112198592');                   
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            if ( divElement.offsetWidth > 800 ) { 
+                                vizElement.style.minWidth='200px';
+                                vizElement.style.maxWidth='1500px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='427px';
+                                vizElement.style.maxHeight='1027px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else if ( divElement.offsetWidth > 500 ) { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height='1327px';}                     
+                            var scriptElement = document.createElement('script');                    
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
 
-                <script type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1617651905472');                    
-                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-                    if ( divElement.offsetWidth > 800 ) { 
-                        vizElement.style.minWidth='420px';
-                        vizElement.style.maxWidth='1800px';
-                        vizElement.style.width='100%';
-                        vizElement.style.minHeight='587px';
-                        vizElement.style.maxHeight='1027px';
-                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    } else if ( divElement.offsetWidth > 500 ) { 
-                        vizElement.style.minWidth='420px';
-                        vizElement.style.maxWidth='1800px';
-                        vizElement.style.width='100%';
-                        vizElement.style.minHeight='587px';
-                        vizElement.style.maxHeight='1027px';
-                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    } else { 
-                        vizElement.style.width='100%';
-                        vizElement.style.height='1527px';}                     
-                    var scriptElement = document.createElement('script');                    
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);     
+                        <div class='tableauPlaceholder' id='viz1618111880654' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='NN-SKL Models ' 
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MY&#47;MYK9TJCPX&#47;1_rss.png' style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='path' value='shared&#47;MYK9TJCPX' /> 
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MY&#47;MYK9TJCPX&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                            </object>
+                        </div>                
+                        
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1618111880654');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            if ( divElement.offsetWidth > 800 ) { 
+                                vizElement.style.minWidth='420px';
+                                vizElement.style.maxWidth='1500px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='587px';
+                                vizElement.style.maxHeight='1027px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else if ( divElement.offsetWidth > 500 ) { 
+                                vizElement.style.minWidth='420px';
+                                vizElement.style.maxWidth='1500px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='587px';
+                                vizElement.style.maxHeight='1027px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height='727px';}                     
+                            var scriptElement = document.createElement('script');                   
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+
+                    </section>
+            
+            
+                    <!-- FIFTH DASHBOARD -->
+                    <section id="predictions">
+                        <h2>Predictions</h2>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+
+                        </p>
+                        <div class='tableauPlaceholder' id='viz1618111822965' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='Feature Models ' 
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Predictions_16178534877910&#47;FeatureModels&#47;1_rss.png' 
+                                    style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='Predictions_16178534877910&#47;FeatureModels' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Predictions_16178534877910&#47;FeatureModels&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                            </object>
+                        </div>                
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1618111822965');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            if ( divElement.offsetWidth > 800 ) { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else if ( divElement.offsetWidth > 500 ) { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height='777px';}                     
+                            var scriptElement = document.createElement('script');                    
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                        </script>
+
+                        <div class='tableauPlaceholder' id='viz1618111937648' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='CO2 Model ' 
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Predictions_16178534877910&#47;CO2Model&#47;1_rss.png' 
+                                    style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='Predictions_16178534877910&#47;CO2Model' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Predictions_16178534877910&#47;CO2Model&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                            </object>
+                        </div>                
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1618111937648');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            if ( divElement.offsetWidth > 800 ) { 
+                                vizElement.style.minWidth='420px';
+                                vizElement.style.maxWidth='650px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='587px';
+                                vizElement.style.maxHeight='887px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else if ( divElement.offsetWidth > 500 ) { 
+                                vizElement.style.minWidth='420px';
+                                vizElement.style.maxWidth='650px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='587px';
+                                vizElement.style.maxHeight='887px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height='727px';}                     
                                 
-                </script>
-            </section>
+                            var scriptElement = document.createElement('script');                    
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                         </script>
+                    </section>
+
+                    <!-- SIXTH DASHBOARD -->
+                    <section id="energy">
+                        <h2>Energy Consumption</h2>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+                        </p>
+                        <div class='tableauPlaceholder' id='viz1618112137527' style='position: relative'><noscript><a href='#'><img alt='Energy use by Cluster ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_Classes&#47;EnergyusebyCluster&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Climate_Change_Classes&#47;EnergyusebyCluster' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_Classes&#47;EnergyusebyCluster&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1618112137527');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1027px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='1500px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='1027px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    </section>
 
 
-            <!-- THIRD DASHBOARD -->
-            <section id="emissions">
-                <h3>Emissions</h3>
-                <div class='section3' id='viz1618022359284' style='position: relative'>
-                    <noscript>
-                        <a href='#'>
-                            <img alt='Climate Change Findings By Class ' 
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_USA_16180223475650&#47;FindingsbyCluster&#47;1_rss.png' 
-                            style='border: none' />
-                        </a>
-                    </noscript>
-                    <object class='tableauViz'  style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                        <param name='embed_code_version' value='3' /> 
-                        <param name='site_root' value='' />
-                        <param name='name' value='Climate_Change_USA_16180223475650&#47;FindingsbyCluster' />
-                        <param name='tabs' value='no' />
-                        <param name='toolbar' value='yes' />
-                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Climate_Change_USA_16180223475650&#47;FindingsbyCluster&#47;1.png' /> 
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='language' value='en' />
-                        <param name='filter' value='publish=yes' />
-                    </object>
-                </div>                
-                
-                <script type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1618022359284');                    
-                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-                    if ( divElement.offsetWidth > 800 ) { 
-                        vizElement.style.minWidth='200px';
-                        vizElement.style.maxWidth='1500px';
-                        vizElement.style.width='100%';
-                        vizElement.style.minHeight='427px';
-                        vizElement.style.maxHeight='1027px';
-                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    } else if ( divElement.offsetWidth > 500 ) { 
-                        vizElement.style.width='100%';
-                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    } else { 
-                        vizElement.style.width='100%';
-                        vizElement.style.height='1327px';}                     
-                    var scriptElement = document.createElement('script');                    
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                
-                </script>
-            </section>
+                    <!-- SEVENTH DASHBOARD -->
+                    <section id="states">
+                        <h2>State Comparison</h2>
+                        <div class='section6' id='viz1618093135105' style='position: relative'>
+                            <noscript>
+                                <a href='#'>
+                                    <img alt='Dashboard 1 ' 
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;ResultsbyState&#47;Dashboard1&#47;1_rss.png' 
+                                    style='border: none' />
+                                </a>
+                            </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='ResultsbyState&#47;Dashboard1' />
+                                <param name='tabs' value='no' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;ResultsbyState&#47;Dashboard1&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en' />
+                                <param name='filter' value='publish=yes' />
+                            </object>
+                        </div>                
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1618093135105');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            if ( divElement.offsetWidth > 800 ) { 
+                                vizElement.style.minWidth='420px';
+                                vizElement.style.maxWidth='1800px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='587px';
+                                vizElement.style.maxHeight='827px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else if ( divElement.offsetWidth > 500 ) { 
+                                vizElement.style.minWidth='420px';
+                                vizElement.style.maxWidth='1800px';
+                                vizElement.style.width='100%';
+                                vizElement.style.minHeight='587px';
+                                vizElement.style.maxHeight='827px';
+                                vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+                            } else { 
+                                vizElement.style.width='100%';
+                                vizElement.style.height='1027px';}                     
+                            var scriptElement = document.createElement('script');                    
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+                     </section>   
+                    
+                     <section id="conclusions">
+                        <h2>Conclusions</h2>
+                        <p> 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
 
+                        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>   
+                    </section>
 
-            <!-- FOURTH DASHBOARD -->
-            <section id="states">
-                <h2> CLIMATE CHANGE IS REAL: Temperature vs CO2</h2>
-                <div class='section4' id='viz1617677024233' style='position: relative'>
-                    <noscript>
-                        <a href='#'>
-                            <img alt='Temp_Key_Findings ' 
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temp_CO2_highlights&#47;Temp_Key_Findings&#47;1_rss.png' 
-                            style='border: none' />
-                        </a>
-                    </noscript>
-                    <object class='tableauViz'  style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                        <param name='embed_code_version' value='3' /> 
-                        <param name='site_root' value='' />
-                        <param name='name' value='Temp_CO2_highlights&#47;Temp_Key_Findings' />
-                        <param name='tabs' value='no' />
-                        <param name='toolbar' value='yes' />
-                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temp_CO2_highlights&#47;Temp_Key_Findings&#47;1.png' /> 
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='language' value='en' />
-                    </object>
-                </div>                
+                </div>
 
-                <script type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1617677024233');                    
-                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-                    if ( divElement.offsetWidth > 800 ) { 
-                        vizElement.style.width='100%';
-                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    } else if ( divElement.offsetWidth > 500 ) { 
-                        vizElement.style.width='100%';
-                        vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    } else { 
-                        vizElement.style.width='100%';
-                        vizElement.style.height='727px';}                     
-                    var scriptElement = document.createElement('script');                    
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                </script>
+            </div>
 
-            </section>
-
-
-            <!-- FIFTH DASHBOARD -->
-            <section id="class">
-                <h2> CLIMATE CHANGE IS REAL: CO2 by State</h2>
-                <div class='section5' id='viz1617749687957' style='position: relative'>
-                    <noscript>
-                        <a href='#'>
-                            <img alt='CO2_Key_Findings ' 
-                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temp_CO2_highlights&#47;CO2_Key_Findings&#47;1_rss.png' 
-                            style='border: none' />
-                        </a>
-                    </noscript>
-                    <object class='tableauViz'  style='display:none;'>
-                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                        <param name='embed_code_version' value='3' /> 
-                        <param name='site_root' value='' />
-                        <param name='name' value='Temp_CO2_highlights&#47;CO2_Key_Findings' />
-                        <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;Temp_CO2_highlights&#47;CO2_Key_Findings&#47;1.png' /> 
-                        <param name='animate_transition' value='yes' />
-                        <param name='display_static_image' value='yes' />
-                        <param name='display_spinner' value='yes' />
-                        <param name='display_overlay' value='yes' />
-                        <param name='display_count' value='yes' />
-                        <param name='language' value='en' />
-                    </object>
-                </div>        
-                            
-                <script type='text/javascript'>                    
-                var divElement = document.getElementById('viz1617749687957');                    
-                var vizElement = divElement.getElementsByTagName('object')[0];                    
-                if ( divElement.offsetWidth > 800 ) 
-                { 
-                    vizElement.style.width='100%';
-                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                } else if ( divElement.offsetWidth > 500 ) 
-                { 
-                    vizElement.style.width='100%';
-                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                } else { 
-                    vizElement.style.width='100%';vizElement.style.height='877px';}                     
-                var scriptElement = document.createElement('script');                    
-                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-                </script>
-
-            </section>
-
+            
         </div>
+
+
     <!-- MAIN JS -->
 
-        <!-- <script src="static/js/main.js"></script> -->
+        <script src="static/js/main.js"></script>
     </body>
 </html>
+
