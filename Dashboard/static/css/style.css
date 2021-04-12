@@ -15,12 +15,13 @@ body{
 
 }
 
+/* SIZING OF THE PAGE */
 .wrapper {
 	width: 1450px;
 	margin: 0 auto;
 }
 
-
+/* COLOR AND STRUCTURE OF HEADER */
 header {
 	height: 100px;
 	background:lightsteelblue;
@@ -29,10 +30,12 @@ header {
 	position: fixed;
 }
 
+/* NAVIGATION BAR */
 nav {
 	float: center;
 	line-height: 20px;
 }
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -59,6 +62,7 @@ nav {
   color: black
 }
 
+/* BANNER WITH PHOTO AND CLIMATE CHANGE TITLE */
 .banner-area {
 	width: 100%;
 	height: 300px;
@@ -74,9 +78,10 @@ nav {
 	font-size: 60px;
 	font-style: Helvetica;
 	text-transform: uppercase;
-	color:black;
+	color:white;
 }
 
+/* RELATED TO THE TEXTS REFERRING TO DASHBOARDS */
 .content-area {
 	width: 100%;
 	position: relative;
@@ -85,14 +90,26 @@ nav {
 	height: 1000px;
 }
 
+/* TITLES RELATED TO NAVIGATION BAR */
 .content-area h2 {
 	font-style: Helvetica;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	padding-top: 30px;
 	font-size: 40px;
 	margin: 0;
 }
 
+
+/* SUBTITLES */
+.content-area h3 {
+	font-style: Helvetica;
+	letter-spacing: 2px;
+	padding-top: 30px;
+	font-size: 35px;
+	margin: 0;
+}
+
+/* DESCRIPTIONS OF DASHBOARDS */
 .content-area p {
 	padding: 2% 0px;
 	font-style: Helvetica;
@@ -101,6 +118,7 @@ nav {
 
 }
 
+/* BULLET POINTS INFORMATION */
 .content-area ul li {
 	padding: 1% 1px;
 	font-style: Helvetica;
@@ -110,11 +128,12 @@ nav {
 	list-style-position: inside;
 }
 
-
+/* SCROLLING FEATURE */
 html {
   scroll-behavior: smooth;
 }
 
+/* BACK TO TOP BUTTON FEATURE */
 #myBtn {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
