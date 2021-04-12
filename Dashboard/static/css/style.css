@@ -6,7 +6,7 @@
 }
 
 body{
-	font-style: Helvetica;
+	font-family: Helvetica;
 	color: black;
 	background:white;
 	line-height: 1.6;
@@ -76,9 +76,11 @@ nav {
 .banner-area h2 {
 	padding-top: 2%;
 	font-size: 60px;
-	font-style: Helvetica;
+	font-family: Helvetica;
 	text-transform: uppercase;
 	color:white;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
 }
 
 /* RELATED TO THE TEXTS REFERRING TO DASHBOARDS */
@@ -92,7 +94,7 @@ nav {
 
 /* TITLES RELATED TO NAVIGATION BAR */
 .content-area h2 {
-	font-style: Helvetica;
+	font-family: Helvetica;
 	letter-spacing: 2px;
 	padding-top: 30px;
 	font-size: 40px;
@@ -102,17 +104,17 @@ nav {
 
 /* SUBTITLES */
 .content-area h3 {
-	font-style: Helvetica;
+	font-family: Helvetica;
 	letter-spacing: 2px;
 	padding-top: 30px;
 	font-size: 35px;
-	margin: 0;
+	margin: auto;
 }
 
 /* DESCRIPTIONS OF DASHBOARDS */
 .content-area p {
 	padding: 2% 0px;
-	font-style: Helvetica;
+	font-family: Helvetica;
 	line-height: 30px;
 	font-size: 25px;
 
@@ -121,7 +123,7 @@ nav {
 /* BULLET POINTS INFORMATION */
 .content-area ul li {
 	padding: 1% 1px;
-	font-style: Helvetica;
+	font-family: Helvetica;
 	line-height: 10px;
 	font-size: 25px;
 	list-style-type: circle;
