@@ -93,7 +93,7 @@ nav {
 /* TITLES RELATED TO NAVIGATION BAR */
 .content-area h2 {
 	font-style: Helvetica;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	padding-top: 30px;
 	font-size: 40px;
 	margin: 0;
@@ -124,7 +124,7 @@ nav {
 	font-style: Helvetica;
 	line-height: 10px;
 	font-size: 25px;
-	list-style-type: cirlce;
+	list-style-type: circle;
 	list-style-position: inside;
 }
 
