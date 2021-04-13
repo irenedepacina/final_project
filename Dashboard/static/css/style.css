@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  
 }
 
 body{
@@ -12,13 +13,14 @@ body{
 	line-height: 1.6;
 	height:1300vh;
 	text-align: left;
-	word-wrap: break-word; 
+	
 }
 
 /* SIZING OF THE PAGE */
 .wrapper {
 	width: 1450px;
 	margin: 0 auto;
+	justify-content: center;
 }
 
 /* COLOR AND STRUCTURE OF HEADER */
@@ -83,14 +85,94 @@ nav {
   	-webkit-text-stroke-color: black;
 }
 
+
 /* RELATED TO THE TEXTS REFERRING TO DASHBOARDS */
 .content-area {
 	width: 100%;
 	position: relative;
 	top: 180px;
 	background: white;
-	height: 900px;
+	height: 350px;
 	word-wrap: break-word; 
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 30px;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	padding: 25px;
+	/* background-color: hsl(0, 0%, 96%); */
+  }
+
+.cards .card {
+	position: relative;
+	max-width: 350px;
+	height: 200px;
+	background: lightsteelblue;
+	margin: 30px 10px;
+	padding: 30px 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+	transition: 0.2s ease-in-out;
+}
+
+.cards .card:hover {
+	height: 420px;
+}
+
+/* .cards .card .imgBx {
+	position: flex;
+	max-width: 260px;
+	height: 250px;
+	top: -60px;
+	left: 20px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+	z-index: 1;
+
+} */
+
+.cards .card .imgBx img {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.cards .card .imgContent {
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: black;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.2s ease-in-out;
+}
+
+.cards .card:hover .imgContent {
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.2s;
+}
+
+.cards .card .imgContent h3 {
+	font-family: Helvetica;
+	letter-spacing: 1px;
+	padding-top: 30px;
+	font-size: 25px;
+	margin: auto;
 }
 
 /* TITLES RELATED TO NAVIGATION BAR */
