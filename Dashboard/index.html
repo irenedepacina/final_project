@@ -77,7 +77,7 @@
                     <section id="Introduction">
                         <h2>Introduction</h2>
                         <p> 
-                            Overview of this analysis is to gain insight on climate change trends over time the United States. 
+                            Overview of this analysis is to gain insight on climate change trends over time in the United States. 
                             <ul>
                                 <li>Can we quantify the human impact on climate change in the USA?</li>
                                 <li>Does human impact affect how states individually experience climate change?</li>
@@ -195,7 +195,7 @@
                     </section>
             
             
-                    <!-- CO2 EMISSONS DASHBOARD -->
+                    <!-- CO2 EMISSIONS DASHBOARD -->
                     <section id="emissions">
                         <h2> Emissions Findings</h2>
                         <div class='section3' id='viz1617749687957' style='position: relative'>
@@ -249,11 +249,11 @@
                     <section id="models">
                         <h2> Models</h2>
                         <p>
-                            The dataset considered for this analysis is pertaining to climate change in the United States of America. 
-                            The human interventions contributing to climate change are specifically considered along with other set of features like time and various states of US. 
+                            The datasets used for this analysis are pertaining to climate change in the United States of America. 
+                            Human interventions contributing to climate change in the contiguous USA are specifically considered along with time, location, gdp and population. 
                             After the data was processed, features were selected for thorough analysis based on the understanding of the features and its likely contribution to climate change.
-                            Given that this dataset has lot to be explored in understandings the clusters of data, Unsupervised Machine learning model was employed.
-                            Post Unsupervised ML, it was determined that temperature, CO2, year, state, disasters of a state could be considered as potential targets for supervised ML with rest supplied as features.
+                            Given that this dataset has lot to be explored, to gain understanding Unsupervised Machine learning model was employed.
+                            Post Unsupervised ML, it was determined that temperature, CO2, year, state, disasters of a state could be considered as potential targets for supervised ML with rest of the features supplied as features.
                         </p>
 
                         <!-- UNSUPERVISED MODEL -->
@@ -363,7 +363,7 @@
                     <section id="predictions">
                         <h2>Predictions</h2>
                         <p>
-                            In depth analysis of the features and running the machine learning model for various combinations like predicting temperature with just state, year having a near perfect R-squared of 97.55, led to the inference that the dataset has confounding features and some of the features of the dataset are behaving as proxies for US states. Statistically, this causes spurious association.
+                            After conducting an in-depth analysis of the features and testing various machine learning model combinations, it was learned that predicted temperature with just state and year has a near perfect R-squared of 97.55. This led to the inference that the dataset has confounding features and some of the features of the dataset are behaving as proxies for US states(location). Statistically, this causes spurious association.
                             Considering the above observations, a model was built to predict temperature based on only the human impact features CO2 emissions, population, real GDP, renewable and non-renewable energy consumption features. The R-Squared for this model was found to be 43.68%.
                             Human-related features were able to predict the state name with 98.48% accuracy using just a simple neural network consisting of a single hidden layer of 100 nodes. This implies that state name (location) has a great influence on GDP, population, CO2 emission and energy consumption. It is reasonable to believe that location contains unique features like demographics and information about the local economy which influence these human-related features.
                         </p>
@@ -567,9 +567,9 @@
                             <ul>
                                 <li>A model that solely uses human-related features to predict climate change measured in average annual state temperature is not accurate</li>
                                 <li>Location has major influence both temperature and human-related features</li>
-                                <li>A model that quantifies the impact of a state's energy consumption pattern on CO2 emissions, the main culprit of rising temperatures</li>
+                                <li>A model is created that quantifies the impact of a state's energy consumption pattern on CO2 emissions, the main culprit of rising temperatures</li>
                                 <li>Energy consumption from non-renewable sources such as coal, petroleum, and natural gas contribute to increasing CO2 emissions</li>
-                                <li>Energy consumption from renewable sources such as biomass, hydropower, solar, and wind either reduce CO2 emissions </li>
+                                <li>Energy consumption from renewable sources such as biomass, hydropower, solar, and wind either reduce or decrease CO2 emissions </li>
                             </ul>
                         </p>
 
