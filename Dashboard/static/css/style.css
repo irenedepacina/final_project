@@ -67,10 +67,10 @@ nav {
 /* BANNER WITH PHOTO AND CLIMATE CHANGE TITLE */
 .banner-area {
 	width: 100%;
-	height: 300px;
+	height: 400px;
 	position: relative;
 	top: 100px;
-	background-image: url(https://climatechangeconnection.org/wp-content/uploads/2018/09/bigstock-Polar-Bear-In-Sea-2330799-cropped.jpg);
+	background-image: url(https://www.sheknows.com/wp-content/uploads/2019/10/eco-anxiety-managing-fires-california.png?w=2394);
 	background-size: cover;
 	background-position: center center;
   	text-align: center;
@@ -116,7 +116,7 @@ nav {
 .cards .card {
 	position: relative;
 	max-width: 350px;
-	height: 200px;
+	height: 240px;
 	background: lightsteelblue;
 	margin: 30px 10px;
 	padding: 30px 15px;
@@ -133,16 +133,14 @@ nav {
 	height: 380px;
 }
 
-/* .cards .card .imgBx {
-	position: flex;
-	max-width: 260px;
-	height: 250px;
-	top: -60px;
-	left: 20px;
-	box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-	z-index: 1;
+.cards .card h3 {
+	font-family: Helvetica;
+	letter-spacing: 2px;
+	padding-top: 30px;
+	font-size: 25px;
+	margin-top: -25px;
+}
 
-} */
 
 .cards .card .imgBx img {
 	max-width: 100%;
@@ -151,9 +149,9 @@ nav {
 
 .cards .card .imgContent {
 	position: relative;
-	margin-top: -140px;
+	margin-top: -150px;
 	padding: 10px 15px;
-	text-align: center;
+	align-content: center;
 	color: black;
 	visibility: hidden;
 	opacity: 0;
@@ -163,18 +161,10 @@ nav {
 .cards .card:hover .imgContent {
 	visibility: visible;
 	opacity: 1;
-	margin-top: -40px;
+	margin-top: -25px;
 	transition-delay: 0.2s;
 }
 
-.cards .card .imgContent h3 {
-	font-family: Helvetica;
-	letter-spacing: 1px;
-	padding-top: 30px;
-	font-size: 25px;
-	margin: auto;
-	text-transform: uppercase;
-}
 
 /* TITLES RELATED TO NAVIGATION BAR */
 .content-area h2 {
