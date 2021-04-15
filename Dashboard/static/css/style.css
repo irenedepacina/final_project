@@ -149,7 +149,7 @@ nav {
 
 .cards .card .imgContent {
 	position: relative;
-	margin-top: -150px;
+	margin-top: -160px;
 	padding: 10px 15px;
 	align-content: center;
 	color: black;
@@ -189,14 +189,14 @@ nav {
 .content-area p {
 	padding: 2% 0px;
 	font-family: Helvetica;
-	line-height: 20px;
+	line-height: 25px;
 	font-size: 20px;
 	word-wrap: break-word; 
 }
 
 /* BULLET POINTS INFORMATION */
 .content-area ul li {
-	padding: 2% 0px;
+	padding: 1% 1px;
 	font-family: Helvetica;
 	line-height: 1px;
 	font-size: 20px;
