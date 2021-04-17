@@ -28,14 +28,15 @@
 - A model that quantifies the impact of a state's energy consumption pattern on CO2 emissions, the main culprit of rising temperatures
 - Energy consumption from non-renewable sources such as coal, petroleum, and natural gas contribute to increasing CO2 emissions
 - Energy consumption from renewable sources such as biomass, hydropower, solar, and wind either reduce CO2 emissions
+- While humna impact on temperature is difficult to determine concluively with our data, human impact on CO2 emissions can be predicted and impacted through responsible selection of energy sources. 
 
 ## Dashboard
-- Visualizations were created using Tableau and Heroku Hybrid.
-- HTML / Heroku page <a href="placeholder">Place Holder link should be updated</a>
-- Interactive Tableau visualizations
+- Visualizations were created using Tableau and HTML Hybrid.
+- HTML/CSS/Java webpage <a href="https://irenedepacina.github.io/climate_change/">Climate Change Webpage</a>
+- Interactive Tableau Visualizations
     - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1">Climate Change Trends over Time</a>
     - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1">Results by State</a>
-    - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_USA/FindingsbyCluster?publish=yes">unsupervised machine learning model clusters</a>
+    - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Climate_Change_USA/FindingsbyCluster?publish=yes">Unsupervised Machine Learning Model Clusters</a>
     - <a href="https://public.tableau.com/profile/stephanie.m.juniper#!/vizhome/Temp_CO2_highlights/CO2_Key_Findings?publish=yes">Machine Learning Predictions</a>
 - Please find presentation of our analysis on <a href="https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p">Google Slides</a>
 - Please see <a href="https://github.com/irenedepacina/final_project/blob/develop/Dashboard/README.md">Dashboard --> README</a> for more details.

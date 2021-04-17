@@ -4,8 +4,9 @@
 
 We wanted to gain insight on climate change in the United States. We are interested to know if we quantify the human impact on climate change in the USA. In addition, we want to know if states are experiencing climate change equally and if some states are influencing climate change more than others.  
 
-## Presentation Slides:
+## Presentation Slides and Script:
  - <a href="https://docs.google.com/presentation/d/15MENIOhjLSVF9AC3xavduDZ4B1AA4qlJFtM7gXTUJPA/edit#slide=id.p">Climate Trends Slides</a>
+ - <a href="https://docs.google.com/document/d/17QTFpMqb2Hr_oPxPhpX2MKCEbhAhqKD2b9tUgRSGlSM/edit?usp=sharing">Presentation Script</a>
 
 
 ## Primary Responsibilities:
@@ -81,6 +82,7 @@ We wanted to gain insight on climate change in the United States. We are interes
 ## Webpage
 
 - Used HTML, CSS, and Javacript to create a webpage
+- We used a combined csv file that included all of our features.
 - The webpage is divided into 7 sections:
     - Climate Trends
     - Temperature Findings
@@ -90,6 +92,11 @@ We wanted to gain insight on climate change in the United States. We are interes
     - Energy Consumption
     - State Comparison
     - Conclusions/Key Takeaways
-- The structure of the webpage is to showcase the biggest takeaways in less detail first and then the lower importance facts in more detail
+- The structure of the webpage is to showcase the biggest takeaways in less detail first and work towards explaining the lower importance facts in more detail.
 - The webpage highlights all of the findings from the climate change datasets and machine learning model. The findings are visualized in a manner that is honest and easily accessible. The dashboards enables users to see trends and statistics based on selected years, states, and clusters. 
+- The dashboards include filters and animations to enable users to see changes over time and gain insight on selected features, states, and clusters.
+- Our webpage can be found in the link provided giving useres the opportunity to see our findings, trends, and compare states and clusters.
+
+    <a href="https://irenedepacina.github.io/climate_change/">Climate Change Webpage</a>
+
 
