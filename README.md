@@ -4,7 +4,7 @@
 - Irene Depacina
 - Sebastian Villanoy
 - Stephanie Juniper
-- Vinutha BS
+- Vinutha Phani
 
 ## Selected Topic : <i><b>"Climate change by State in the USA"</i></b>
 
