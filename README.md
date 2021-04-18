@@ -1,10 +1,10 @@
 # Climate Change Group Project
 
 ## Team 
-- Irene 
-- Sebastian
-- Stephanie
-- Vinutha
+- Irene Depacina
+- Sebastian Villanoy
+- Stephanie Juniper
+- Vinutha BS
 
 ## Selected Topic : <i><b>"Climate change by State in the USA"</i></b>
 
