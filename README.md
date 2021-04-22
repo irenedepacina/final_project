@@ -32,7 +32,7 @@
 
 ## Dashboard
 - Visualizations were created using Tableau and HTML Hybrid.
-- HTML/CSS/Java webpage <a href="https://irenedepacina.github.io/climate_change/">Climate Change Webpage</a>
+- HTML/CSS/Java webpage <a href="https://irenedepacina.github.io/predicting_temp/">Climate Change Webpage</a>
 - Interactive Tableau Visualizations
     - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ClimateChangeTrends_16174174601980/Dashboard1">Climate Change Trends over Time</a>
     - <a href="https://public.tableau.com/profile/irene.depacina#!/vizhome/ResultsbyState/Dashboard1">Results by State</a>

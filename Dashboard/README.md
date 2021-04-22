@@ -97,6 +97,6 @@ We wanted to gain insight on climate change in the United States. We are interes
 - The dashboards include filters and animations to enable users to see changes over time and gain insight on selected features, states, and clusters.
 - Our webpage can be found in the link provided giving useres the opportunity to see our findings, trends, and compare states and clusters.
 
-    <a href="https://irenedepacina.github.io/climate_change/">Climate Change Webpage</a>
+    <a href="https://irenedepacina.github.io/predicting_temp/">Climate Change Webpage</a>
 
 
