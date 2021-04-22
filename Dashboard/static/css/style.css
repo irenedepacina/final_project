@@ -35,7 +35,7 @@ header {
 /* NAVIGATION BAR */
 nav {
 	float: center;
-	line-height: 20px;
+	line-height: 18px;
 }
 
 .navbar ul {
@@ -58,6 +58,8 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
   font-style: Helvetica;
+  font-size: 15px;
+  text-align: center;
 }
 
 .navbar ul li a:hover {
