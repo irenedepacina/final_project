@@ -91,6 +91,7 @@ We wanted to gain insight on climate change in the United States. We are interes
     - Predictions and Accuracy
     - Energy Consumption
     - State Comparison
+    - Energy Use per Capita
     - Conclusions/Key Takeaways
 - The structure of the webpage is to showcase the biggest takeaways in less detail first and work towards explaining the lower importance facts in more detail.
 - The webpage highlights all of the findings from the climate change datasets and machine learning model. The findings are visualized in a manner that is honest and easily accessible. The dashboards enables users to see trends and statistics based on selected years, states, and clusters. 
